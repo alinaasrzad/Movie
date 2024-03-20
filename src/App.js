@@ -1,4 +1,4 @@
-
+// import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Movies from './Components/Movies'
 function App() {

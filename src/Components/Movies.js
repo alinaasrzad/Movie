@@ -16,14 +16,19 @@ const handClick = (id) => {
     }))
 }
 return (
-    <div className="App">
+    <div className="container App">
+        <div className="grid m-5">
+            <h1>
+                Movies
+            </h1>
+        </div>
       {
         events.map((event,index)=>(
-            <div key={event.id}>
-                <h2>
+            <div className="row font" key={event.id}>
+                <h2 >
                     {index + 1 } - {event.title}
                 </h2>
-                <button onClick={() => handClick(event.id)}>
+                <button className="btn-blue-600 hover:bg-blue-700" onClick={() => handClick(event.id)}>
                     delete
                 </button>
             </div>
