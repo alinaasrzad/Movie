@@ -1,13 +1,14 @@
-import {useState} from "react"
+import {useState} from "react";
+import('tailwindcss').Config;
 function Movies() {
     
 const [name,setName] = useState("alina")
 const [events,setEvents] = useState([
-   {title : "friends" , id:1},
-   {title : "my bad" , id:2},
-   {title : "the sea beast" , id:3},
-   {title : "all of us are dead" , id:4},
-   {title : "rick anf morty" , id:5}
+   {title : "Friends" , id:1},
+   {title : "My bad" , id:2},
+   {title : "The sea beast" , id:3},
+   {title : "All of us are dead" , id:4},
+   {title : "Rick and morty" , id:5}
 
 ]) 
 const handClick = (id) => {
@@ -24,7 +25,7 @@ return (
         </div>
       {
         events.map((event,index)=>(
-            <div className="row font" key={event.id}>
+            <div className="" key={event.id}>
                 <h2 >
                     {index + 1 } - {event.title}
                 </h2>
